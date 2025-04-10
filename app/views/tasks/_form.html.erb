@@ -1,4 +1,4 @@
-<%= form_with(model: task) do |form| %>
+<%= form_with(model: task, class: "form") do |form| %>
 
   <% if task.errors.any? %>
     <div style="color: red">
@@ -10,20 +10,27 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :task_name, style: "display: block" %>
-    <%= form.text_field :task_name %>
+  <div class="task-name-field">
+    <%= form.label :task_name %>
+    <%= form.text_field :task_name, class: "text-input" %>
   </div>
 
-  <div>
-    <%= form.label :urgent %>
-    <%= form.check_box :urgent %>
+  <div class="priority-container">
+    <div>Priority</div>
+    <div class="priority-check-box">
+      <div class="urgent">
+        <%= form.label :urgent %>
+        <%= form.check_box :urgent %>
+      </div>
 
-    <%= form.label :important %>
-    <%= form.check_box :important %>
+      <div class="important">
+        <%= form.label :important %>
+        <%= form.check_box :important %>
+      </div>
+    </div>
   </div>
 
-  <div>
+  <div class="submit-container">
     <%= form.submit %>
   </div>
 

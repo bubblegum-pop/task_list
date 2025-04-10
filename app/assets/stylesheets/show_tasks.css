@@ -19,16 +19,6 @@
   border: none;
 }
 
-.task-label.urgent {
-  background-color: var(--main-dark);
-  color: white;
-}
-
-.task-label.important {
-  background-color: var(--accent-dark);
-  color: white;
-}
-
 .not-urgent,
 .not-important {
   border: none;
@@ -57,8 +47,12 @@
 }
 
 .link.new-task:hover {
-  background: var(--main-light);
+  background-color: var(--main-light);
   color: white;
+}
+
+.link.new-task:active {
+  background-color: var(--main-dark);
 }
 
 .complete-button {
