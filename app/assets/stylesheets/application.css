@@ -10,10 +10,11 @@
  */
 
 :root {
-  --main-light: #f3d1dc;
-  --main-dark: #f6a7c1;
-  --accent-light: #fcf0cf;
-  --accent-dark: #b16e4b;
+  --main-light: #ff847c;
+  --main-dark: #e84a5f;
+  --accent-light: #fecea8;
+  --accent-dark: #99b898;
+  --text: #2a363b;
 }
 
  body {
@@ -21,10 +22,6 @@
   background-color: var(--main-light);
   padding: 0;
   margin: 0;
-}
-
-* {
-  border: 1px solid red;
 }
 
 a {
