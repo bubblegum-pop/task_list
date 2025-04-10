@@ -1,17 +1,13 @@
 <div id="<%= dom_id task %>">
-  <p>
-    <strong>Task name:</strong>
-    <%= task.task_name %>
-  </p>
+  
+  <li class="list-item">
+    <%= button_to "Complete", task_path(task.id), params: { task: { id: task.id, complete: true } }, method: :patch %>
+    <%= link_to task.task_name, task %>
+    <div class="task-label urgent">Urgent</div>
+    <div class="task-label important">Important</div>
+  </li>
 
   <p>
-    <strong>Urgent:</strong>
-    <%= task.urgent %>
+    <%= task.complete %>
   </p>
-
-  <p>
-    <strong>Important:</strong>
-    <%= task.important %>
-  </p>
-
 </div>
