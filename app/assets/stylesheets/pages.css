@@ -25,7 +25,8 @@
   height: 400px;
 }
 
-.page.new {
+.page.new,
+.page.edit {
   gap: 20px;
 }
 

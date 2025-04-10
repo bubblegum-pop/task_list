@@ -6,8 +6,9 @@
 
   <%= render "form", task: @task %>
 
-  <%= button_to "Delete Task", @task, method: :delete, class: "delete" %>
-
-  <%= link_to "Cancel", tasks_path, class: "cancel" %>
+  <div class="delete-cancel-row">
+    <%= button_to "Delete Task", @task, method: :delete, class: "delete" %>
+    <%= link_to "Cancel", tasks_path, class: "cancel" %>
+  </div>
 
 </div>

@@ -32,9 +32,10 @@ a {
 .cancel {
   background-color: var(--accent-light);
   color: var(--text);
-  padding: 8px;
-  border-radius: 10px;
   border: 1px solid var(--accent-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cancel:hover {
@@ -49,9 +50,6 @@ a {
   background-color: var(--text);
   border: none;
   color: white;
-  border-radius: 10px;
-  padding: 8px;
-  margin: 20px;
   cursor: pointer;
   border: 1px solid var(--text);
 }
@@ -74,4 +72,19 @@ a {
 .important {
   background-color: var(--accent-dark);
   color: white;
+}
+
+.delete-cancel-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.delete,
+.cancel {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 14px;
 }
