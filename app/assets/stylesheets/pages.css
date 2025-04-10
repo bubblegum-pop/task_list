@@ -1,0 +1,25 @@
+.page {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+.page.show {
+  background-color: var(--dark-pink);
+  border: 4px solid var(--cream);
+  max-width: 500px;
+  min-height: 500px;
+}
+
+.page.new,
+.page.edit,
+.page.home {
+  background-color: var(--cream);
+  border: 4px solid var(--dark-pink);
+  width: 300px;
+  height: 400px;
+}

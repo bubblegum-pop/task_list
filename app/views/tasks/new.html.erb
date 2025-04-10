@@ -1,11 +1,15 @@
 <% content_for :title, "New task" %>
 
-<h1>New task</h1>
+<div class="page new">
 
-<%= render "form", task: @task %>
+  <h1>New task</h1>
 
-<br>
+  <%= render "form", task: @task %>
 
-<div>
-  <%= link_to "Back to tasks", tasks_path %>
+  <br>
+
+  <div>
+    <%= link_to "Back to tasks", tasks_path %>
+  </div>
+
 </div>

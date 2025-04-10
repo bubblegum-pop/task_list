@@ -1,13 +1,17 @@
 <% content_for :title, "Editing task" %>
 
-<h1>Editing task</h1>
+<div class="page edit">
 
-<%= render "form", task: @task %>
+  <h1>Editing task</h1>
 
-<br>
+  <%= render "form", task: @task %>
 
-<%= button_to "Destroy this task", @task, method: :delete %>
+  <br>
 
-<div>
-  <%= link_to "Back to tasks", tasks_path %>
+  <%= button_to "Destroy this task", @task, method: :delete %>
+
+  <div>
+    <%= link_to "Back to tasks", tasks_path %>
+  </div>
+
 </div>
