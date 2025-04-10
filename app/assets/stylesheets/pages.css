@@ -3,14 +3,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
   border-radius: 20px;
+  color: var(--accent-dark);
+  padding: 12px;
 }
 
 .page.show {
-  background-color: var(--dark-pink);
-  border: 4px solid var(--cream);
+  background-color: var(--main-dark);
+  border: 4px solid var(--accent-light);
   max-width: 500px;
   min-height: 500px;
 }
@@ -18,8 +18,8 @@
 .page.new,
 .page.edit,
 .page.home {
-  background-color: var(--cream);
-  border: 4px solid var(--dark-pink);
+  background-color: var(--accent-light);
+  border: 4px solid var(--main-dark);
   width: 300px;
   height: 400px;
 }

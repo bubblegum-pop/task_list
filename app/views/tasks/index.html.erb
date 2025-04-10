@@ -4,14 +4,15 @@
 
   <h1>Tasks</h1>
 
-  <div id="tasks">
+  <ul class="task-container" id="tasks">
     <% @tasks.each do |task| %>
-      <ul>
-        <%= render task %>
-      </ul>
+      <%= render task %>
     <% end %>
-  </div>
+  </ul>
 
-  <%= link_to "New task", new_task_path %>
+  <%= link_to new_task_path, class: "link new-task" do %>
+    <i class="fa-solid fa-plus"></i>
+    <div>New Task</div>
+  <% end %>
 
 </div>

@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--dark-pink);
+  background-color: var(--main-dark);
   height: 60px;
   margin: 0;
   text-align: center;
@@ -9,7 +9,7 @@
 }
 
 .header-brand {
-  color: var(--cream);
+  color: var(--accent-light);
   font-size: 36px;
   font-weight: bold;
 }
