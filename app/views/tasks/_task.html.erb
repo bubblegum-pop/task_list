@@ -1,8 +1,8 @@
 <div id="<%= dom_id task %>">
   
   <li class="list-item">
-    <%= button_to "Complete", task_path(task.id), params: { task: { id: task.id, complete: true } }, method: :patch %>
-    <%= link_to task.task_name, task %>
+    <%= button_to "", task_path(task.id), params: { task: { id: task.id, complete: true } }, method: :patch, class: "complete-button" %>
+    <%= link_to task.task_name, edit_task_path(task) %>
     <div class="task-label urgent">Urgent</div>
     <div class="task-label important">Important</div>
   </li>
