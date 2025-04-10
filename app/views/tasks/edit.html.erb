@@ -2,16 +2,14 @@
 
 <div class="page edit">
 
-  <h1>Editing task</h1>
+  <h1>Edit Task</h1>
 
-  <%= render "form", task: @task %>
-
-  <br>
-
-  <%= button_to "Destroy this task", @task, method: :delete %>
-
-  <div>
-    <%= link_to "Back to tasks", tasks_path %>
+  <div class="form edit">
+    <%= render "form", task: @task %>
   </div>
+
+  <%= button_to "Delete", @task, method: :delete, class: "delete" %>
+
+  <%= link_to "Cancel", tasks_path, class: "cancel" %>
 
 </div>

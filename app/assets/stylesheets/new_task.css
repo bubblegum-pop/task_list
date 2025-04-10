@@ -1,0 +1,8 @@
+.page.new > * {
+  border: 1px solid blue;
+}
+
+.page.new > h1 {
+  color: var(--text);
+  margin: 0;
+}
