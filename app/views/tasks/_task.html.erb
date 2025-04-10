@@ -3,7 +3,7 @@
   <li class="list-item">
     <%# <%= button_to "", task_path(task.id), params: { task: { id: task.id, complete: true } }, method: :patch, class: "complete-button" %>
     <%= button_to "", task, method: :delete, class: "complete-button" %>
-    <%= link_to task.task_name, edit_task_path(task), class: "link" %>
+    <%= link_to task.task_name, edit_task_path(task), class: "link-edit-task" %>
     
     <div class="task-label-container">
       <% if task.urgent %>

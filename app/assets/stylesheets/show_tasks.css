@@ -32,7 +32,7 @@
 .not-urgent,
 .not-important {
   border: none;
-  background-color: var(--accent-light);
+  background: none;
   color: var(--accent-light);
 }
 
@@ -42,7 +42,7 @@
   margin: 0;
 }
 
-.list-item > .link {
+.link-edit-task {
   color: var(--text);
   flex-grow: 1;
 }
@@ -50,12 +50,14 @@
 .link.new-task {
   display: flex;
   gap: 4px;
-  background-color: var(--main-dark);
+  background: none;
   padding: 6px;
   border-radius: 24px;
+  color: var(--main-dark);
 }
 
-.link.new-task > * {
+.link.new-task:hover {
+  background: var(--main-light);
   color: white;
 }
 
